@@ -26,8 +26,26 @@ function copyToClipboard(text) {
     });
 }
 
-// Toggle mobile menu
-document.querySelector('.menu-toggle')?.addEventListener('click', function() {
-    document.querySelector('.nav-links').classList.toggle('active');
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    
+    fetch('send-mail.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            alert('Message sent successfully!');
+            this.reset();
+        } else {
+            alert('Error: ' + data.message);
+        }
+    })
+    .catch(error => {
+        alert('An error occurred. Please try again later.');
+        console.error('Error:', error);
+    });
 });
-
