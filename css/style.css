@@ -275,21 +275,25 @@ body {
 
 /* Left Side - Text */
 .general-info-text {
-    margin-top: 80px;
     flex: 1;
-    max-width: 50%;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto 2rem;
 }
 
 .general-info-text h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-align: center;
 }
 
 .general-info-text p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    color: #ffffff;
     line-height: 1.6;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 /* Right Side - Cards */
@@ -785,11 +789,19 @@ footer {
         max-width: 100%;
     }
 
-    .genenral-info-text h1{
-         /* Multi-line heading centering */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .genenral-info-text {
+        max-width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .general-info-text h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .general-info-text p {
+        text-align: center;
     }
 
     .security-cards {

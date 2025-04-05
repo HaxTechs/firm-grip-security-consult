@@ -16,3 +16,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// Function to copy text to clipboard
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        // Show a temporary tooltip or alert
+        alert('The phone number has been copied to your clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
+}
+
+// Toggle mobile menu
+document.querySelector('.menu-toggle')?.addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+

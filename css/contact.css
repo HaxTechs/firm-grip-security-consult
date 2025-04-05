@@ -267,23 +267,6 @@ footer {
     text-align: center;
 }
 
-.footer-top {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 20px;
-    display: relative;
-}
-
-.footer-top h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    
-}
-
-.footer-top p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
 .back-to-top {
     position: relative;
     right: -30%;
@@ -298,23 +281,6 @@ footer {
 
 .back-to-top i {
     margin-right: 5px;
-}
-
-/* Gradient Button */
-.btn-G {
-    display: inline-block;
-    margin-left: 100px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    background: linear-gradient(to right, #4A90E2, #5A2CD6);
-    transition: 0.5s ease;
-}
-
-.btn-G:hover {
-    opacity: 0.8;
 }
 
 /* Footer Content Layout */
